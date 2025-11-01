@@ -1,0 +1,15 @@
+# Ignore model checkpoints and logs
+lightning_logs/
+*.ckpt
+__pycache__/
+*.pt
+*.pkl
+*.h5
+*.zip
+*.csv
+*.npy
+*.npz
+
+# Ignore environment files
+venv/
+.env/
