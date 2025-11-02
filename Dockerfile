@@ -19,5 +19,8 @@ RUN pip install --no-cache-dir --upgrade pip && \
 # Copy all source code
 COPY . .
 
-# Run the app (adjust to your entrypoint)
-CMD ["python", "app.py"]
+# Expose Streamlit default port
+EXPOSE 8501
+
+# ✅ Run Streamlit app instead of python app.py
+CMD ["streamlit", "run", "Streamlit_app.py", "--server.port=8501", "--server.address=0.0.0.0"]
